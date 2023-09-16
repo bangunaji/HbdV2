@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    background-color: #FF3FA4;
+
+  }
+
+  .material-symbols-outlined{
+    color: #FF9B82;
+  }
+
+
+
+  .book {
+    width: 400px;
+    height: 500px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  .left-page, .right-page {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    background-color: #F39F5A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    justify-content: center;
+    font-size: 150px;
+  }
+
+  
+  .left-page {
+    left: 0;
+    transform-origin: left center;
+    transform: rotateY(0deg);
+  }
+  
+  .right-page {
+    right: 0;
+    transform-origin: right center;
+    transform: rotateY(0deg);
+  }
+
+  .middle-page {
+    width: 100%;
+    height: 100%;
+    background-color: #F39F5A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: -10px;
+  }
+
+  .middle-page p {
+    margin: 10px;
+  }
